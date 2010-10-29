@@ -7,7 +7,7 @@ quality report.  This is all in accordance with the following RFC:
 
 http://tools.ietf.org/html/draft-johnston-sipping-rtcp-summary-08
 
-The idea is to use a inexpensive device to snif packets in a network to
+The idea is to use a inexpensive device to sniff packets in a network to
 generate voice quality reports.  That advantage of using the mode where RTP
 packets are sniffed is most devices don't support voice quality reports anyway
 and it analyzes a portion of the network so that problems can be detected and
