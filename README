@@ -1,20 +1,23 @@
-The SIP RTCP Report Reaper is a voice quality analysis tool I wrote in the
-Spring of 2010 when I was between contracts.  There are two modes of operation
-for the reaper.  It can sniff packets for RTCP reports and RTCP voice quality
-reports and generate a publish message to a third party with a voice quality
-report or it sniff for RTP packets and attempt to generate its own voice
-quality report.  This is all in accordance with the following RFC:
+The SIP Voice Quality Report Reaper is a voice quality analysis tool I wrote
+in the Spring of 2010 when I was between contracts.  There are two modes of
+operation for the reaper.  It can sniff packets for RTCP reports and RTCP
+voice quality reports and generate a publish message to a third party with a
+voice quality report or it sniff for RTP packets and attempt to generate its
+own voice quality report.  This is all in accordance with the following RFC:
 
 http://tools.ietf.org/html/draft-johnston-sipping-rtcp-summary-08
 
-The idea is to use a inexpensive device to sniff packets in a network to
-generate voice quality reports.  The advantage of using the mode where RTP
-packets are sniffed is most devices don't support voice quality reports
-and the Reaper can be used to analyze a portion of the network so that
+The tool is designed to sniff packets on a network and generate voice quality
+reports most likely to another network.  The advantage of using the mode where
+RTP packets are sniffed is most devices don't support voice quality reports
+and the Reaper can be used to analyze a segment of the network so that
 fingers can be pointed.
 
-The low cost device for sniffing should have two NICs. There is a shell script
-to generate a deb file and it has been tested on some Ubuntu distros.
+There is a shell script to generate an installable deb file and it has been
+tested on some Ubuntu distros.
 
-In order to work properly, the voice packets and signalling packets must be
-on the same network.
+In order to work properly, the RTP voice packets and the SIP signalling packets
+must be on the same network.
+
+The tool is written in Java with some C code to customize tcpdump so that it
+can be used as a Berkeley Packet Filter for the Reaper.
