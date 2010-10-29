@@ -1,9 +1,6 @@
-The SIP Voice Quality Report Reaper is a voice quality analysis tool I wrote
-in the Spring of 2010 when I was between contracts.  There are two modes of
-operation for the reaper.  It can sniff packets for RTCP reports and RTCP
-voice quality reports and generate a publish message to a third party with a
-voice quality report or it sniff for RTP packets and attempt to generate its
-own voice quality report.  This is all in accordance with the following RFC:
+The SIP Voice Quality Report Reaper sniffs RTCP and RTP packets and generates
+SIP PUBLISH messages with voice quality reports.  It does this in accordance
+with the following RFC:
 
 http://tools.ietf.org/html/draft-johnston-sipping-rtcp-summary-08
 
