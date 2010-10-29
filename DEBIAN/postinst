@@ -1,0 +1,3 @@
+#!/bin/sh
+update-rc.d reaper defaults
+/etc/init.d/reaper start

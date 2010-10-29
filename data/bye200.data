@@ -1,0 +1,11 @@
+SIP/2.0 200 Ok
+Via: SIP/2.0/UDP 200.57.7.195;branch=z9hG4bKff9b46fb055c0521cc24024da96cd290
+Via: SIP/2.0/UDP 200.57.7.195:55061;branch=z9hG4bK291d90e31a47b225bd0ddff4353e9cc0
+From: <sip:200.57.7.195:55061;user=phone>;tag=GR52RWG346-34
+To: "francisco@bestel.com" <sip:francisco@bestel.com:55060>;tag=298852044
+Contact: <sip:francisco@200.57.7.204:5061>
+Call-ID: 12013223@200.57.7.195
+CSeq: 2 BYE
+Server: X-Lite release 1103m
+Content-Length: 0
+

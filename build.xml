@@ -1,0 +1,31 @@
+<project default="all">
+  <target name="all">
+    <mkdir dir="reaper" />
+    <mkdir dir="reaper/etc" />
+    <mkdir dir="reaper/etc/init.d" />
+    <copy file="reaper.sh" tofile="reaper/etc/init.d/reaper" />
+    <mkdir dir="reaper/opt" />
+    <mkdir dir="reaper/opt/reaper" />
+  	
+    <mkdir dir="reaper/DEBIAN" />
+    <copy todir="reaper/DEBIAN">
+       <fileset dir="DEBIAN" />
+    </copy>
+  	
+    <mkdir dir="reaper/opt/reaper/bin" />
+    <copy file="bpf" todir="reaper/opt/reaper/bin" />
+  	<copy file="filter.sh" todir="reaper/opt/reaper/bin" />
+  	
+    <mkdir dir="reaper/opt/reaper/config" />
+    <copy todir="reaper/opt/reaper/config">
+       <fileset dir="config" />
+    </copy>
+  	
+    <mkdir dir="reaper/opt/reaper/lib" />
+    <copy todir="reaper/opt/reaper/lib">
+       <fileset dir="lib" />
+    </copy>
+    <jar destfile="reaper/opt/reaper/lib/reaper.jar" basedir="bin" excludes="**/Test*.class" />
+    <mkdir dir="reaper/opt/reaper/log" />
+  </target>
+</project>

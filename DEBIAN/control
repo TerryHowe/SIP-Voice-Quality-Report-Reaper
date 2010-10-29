@@ -1,0 +1,9 @@
+Package: reaper
+Essential: no
+Priority: optional
+Section: net
+Maintainer: Terry Howe <terrylhowe@gmail.com>
+Architecture: i386
+Version: 0.0.2
+Depends: openjdk-6-jre-headless
+Description: The reaper is a probe for gathering voice quality data from SIP calls

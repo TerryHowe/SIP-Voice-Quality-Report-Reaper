@@ -1,0 +1,10 @@
+ACK sip:francisco@200.57.7.204:5061 SIP/2.0
+Via: SIP/2.0/UDP 200.57.7.195;branch=z9hG4bK0f496e3b6e7bd140e0b701071c1245ab
+Via: SIP/2.0/UDP 200.57.7.195:55061;branch=z9hG4bKa829b54f167d2bb5b96662b4efa0bbc6
+From: <sip:200.57.7.195:55061;user=phone>;tag=GR52RWG346-34
+To: "francisco@bestel.com" <sip:francisco@bestel.com:55060>;tag=298852044
+Call-ID: 12013223@200.57.7.195
+CSeq: 1 ACK
+Contact: <sip:200.57.7.195:5060>
+Content-Length: 0
+

@@ -1,0 +1,4 @@
+#!/bin/sh
+/etc/init.d/reaper stop
+update-rc.d -f reaper remove
+rm -f /etc/init.d/reaper

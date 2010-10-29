@@ -1,0 +1,22 @@
+INVITE sip:francisco@bestel.com:55060 SIP/2.0
+Via: SIP/2.0/UDP 200.57.7.195;branch=z9hG4bKff9b46fb055c0521cc24024da96cd290
+Via: SIP/2.0/UDP 200.57.7.195:55061;branch=z9hG4bK291d90e31a47b225bd0ddff4353e9cc0
+From: <sip:200.57.7.195:55061;user=phone>;tag=GR52RWG346-34
+To: "francisco@bestel.com" <sip:francisco@bestel.com:55060>
+Call-ID: 12013223@200.57.7.195
+CSeq: 1 INVITE
+Contact: <sip:200.57.7.195:5060>
+Content-Type: application/sdp
+Content-Length:   229
+
+v=0
+o=Clarent 120386 120387 IN IP4 200.57.7.196
+s=Clarent C5CM
+c=IN IP4 200.57.7.196
+t=0 0
+m=audio 40376 RTP/AVP 8 18 4 0
+a=rtpmap:8 PCMA/8000
+a=rtpmap:18 G729/8000
+a=rtpmap:4 G723/8000
+a=rtpmap:0 PCMU/8000
+a=SendRecv
