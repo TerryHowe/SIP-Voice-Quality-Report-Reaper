@@ -1,0 +1,5 @@
+This patched version of tcpdump was built with 4.1.1.  Download tcpdump-4.1.1
+and cd to the main source directory.  Apply the patch file:
+
+patch -p1 -i patch.txt
+
