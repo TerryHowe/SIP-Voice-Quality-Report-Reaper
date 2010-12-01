@@ -2,7 +2,7 @@ The SIP Voice Quality Report Reaper sniffs RTCP and RTP packets and generates
 SIP PUBLISH messages with voice quality reports.  It does this in accordance
 with the following RFC:
 
-http://tools.ietf.org/html/draft-johnston-sipping-rtcp-summary-08
+http://www.rfc-editor.org/rfc/rfc6035.txt
 
 The tool is designed to sniff packets on a network and generate voice quality
 reports most likely to another network.  The advantage of using the mode where
