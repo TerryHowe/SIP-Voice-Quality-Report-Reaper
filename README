@@ -42,3 +42,6 @@ at that to make sure it is seeing packets.
 
 Call state prints in /opt/reaper/log/out Might look at that if you see
 packets, but no PUBLISH messages.
+
+A very pimitive and simple web server is available on http://127.0.0.1:8060/ on the
+probe where you can see active calls and some current call stats
